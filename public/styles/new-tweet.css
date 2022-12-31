@@ -22,6 +22,12 @@ form {
   outline: none;
 }
 
+.under-tweet-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .tweet-btn {
   display: flex;
   align-items: center;
@@ -32,16 +38,10 @@ form {
 
 #tweet-counter {
   display: flex;
-  font-family:'Bungee', sans-serif;
+  font-family: 'Bungee', sans-serif;
   color: #545149;
 }
 
 #tweet-counter.exceeded {
   color: red;
-}
-
-.under-tweet-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }

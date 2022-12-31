@@ -1,14 +1,11 @@
+//Responsible for the character counter in the tweet composer.
 
-$(document).ready(function () {
-  // --- our code goes here ---
+$(document).ready(function() {
   var limit = 140;
-
-  $('#tweet-text').keyup(function () {
+  $('#tweet-text').keyup(function() {
     var text = $(this).val();
     var count = text.length;
-
     remaining = limit - count;
-
     if (remaining < 0) {
       $('#tweet-counter').addClass('exceeded');
       remaining = '-' + Math.abs(remaining);
