@@ -9,7 +9,7 @@
 }
 
 .section-tweet {
-padding-top: 1em;
+  padding-top: 1em;
 }
 
 .handle {
@@ -62,7 +62,7 @@ article.tweet footer div {
 
 article.tweet footer div i {
   font-size: 0.6em;
-  padding:0.1em;
+  padding: 0.1em;
   color: #47569D;
   cursor: pointer;
 }
@@ -70,5 +70,3 @@ article.tweet footer div i {
 article.tweet footer div i:hover {
   color: #b87b00;
 }
-
-
