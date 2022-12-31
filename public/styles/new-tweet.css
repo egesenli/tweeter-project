@@ -30,9 +30,14 @@ form {
   color: #FFFFFF;
 }
 
-.tweet-counter {
+#tweet-counter {
   display: flex;
   font-family:'Bungee', sans-serif;
+  color: #545149;
+}
+
+#tweet-counter.exceeded {
+  color: red;
 }
 
 .under-tweet-div {
