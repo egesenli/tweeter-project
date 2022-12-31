@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="styles/header.css" type="text/css" />
   <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="styles/all-tweets.css" type="text/css" />
+
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,12 +46,12 @@
   </nav>
 
   <!-- Header -->
-  <header id="container-column">
+  <header class="header container-column">
     <div>
       <img src="/images/profile-hex.png">
     </div>
     <div>
-      <h2 class="header h2"><b class="header b">Hale</b> Senli</h2>
+      <h2 class="h2"><b class="b">Hale</b> Senli</h2>
     </div>
   </header>
 
@@ -66,6 +68,32 @@
           <output name="counter" id="tweet-counter" for="tweet-text">140<output>
         </div>
       </form>
+    </section>
+
+    <!-- Timeline section -->
+
+    <section class="section-tweet">
+      <article class="tweet">
+        <header class="container-row">
+          <div class="profile container-row">
+            <i class="fa-solid fa-user-astronaut"></i>
+            <p>Erkan Ege Senli</p>
+          </div>
+          <p class="handle">@EESenli</p>
+        </header>
+        <section class="tweet-content">
+          <p>Lorem ipsum that packs a punch. For a new twist on an old classic, drop some Samuel L. Jackson filler text
+            in your next project and Pulp Fictionize it.</p>
+        </section>
+        <footer>
+          <p class="time-stamp">10 days ago</p>
+          <div>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </footer>
+      </article>
     </section>
   </main>
 
