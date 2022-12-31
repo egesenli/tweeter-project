@@ -14,7 +14,9 @@ form {
   border-style: hidden;
   border-bottom: 4px solid #000000;
   background-color: #f4f1ec;
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 1em;
+  color: #545149;
   line-height: 1;
 }
 
