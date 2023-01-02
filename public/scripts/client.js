@@ -56,6 +56,18 @@ $(document).ready(function () {
     await tweetLoader();
     $('.new-tweet form').submit(async function (event) {
       event.preventDefault();
+  
+      // Validation checks
+      const tweetContent = $(this).find('textarea').val().trim();
+      if (tweetContent === "" || tweetContent === null) {
+        alert("Please enter some tweet content");
+        return;
+      }
+        if (tweetContent.length > 140) {
+        alert('Tweet cannot be more than 140 characters');
+        return;
+        }
+  
       console.log('New tweet submitted');
       try {
         const response = await $.ajax({
