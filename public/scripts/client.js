@@ -66,6 +66,33 @@ $(document).ready(function () {
     }
   }
 
-  renderTweets(data);
+  const tweetLoader = async () => {
+    try {
+      const response = await $.ajax({
+        url: '/tweets',
+        method: 'GET',
+      });
+      renderTweets(response);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  $(document).ready(async function () {
+    await tweetLoader();
+    $('.new-tweet form').submit(async function (event) {
+      event.preventDefault();
+      console.log('New tweet submitted');
+      try {
+        const response = await $.ajax({
+          type: 'POST',
+          url: '/tweets',
+          data: $(this).serialize(),
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  });
 
 });
