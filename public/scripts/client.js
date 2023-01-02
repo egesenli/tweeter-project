@@ -35,6 +35,7 @@ $(document).ready(function () {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
+    $('#tweets-container').empty();
     for (const tweet of tweets) {
       $('#tweets-container').append(createTweetElement(tweet));
     }
@@ -75,6 +76,7 @@ $(document).ready(function () {
           url: '/tweets',
           data: $(this).serialize(),
         });
+        tweetLoader();
       } catch (error) {
         console.error(error);
       }
