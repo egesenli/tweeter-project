@@ -32,6 +32,8 @@ $(document).ready(function () {
   }
 
   const renderTweets = function (tweets) {
+    // Reverse the order of the tweets
+    tweets.reverse();
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
@@ -52,23 +54,23 @@ $(document).ready(function () {
       console.error(error);
     }
   };
-  
+
   $(document).ready(async function () {
     await tweetLoader();
     $('.new-tweet form').submit(async function (event) {
       event.preventDefault();
-  
+
       // Validation checks
       const tweetContent = $(this).find('textarea').val().trim();
       if (tweetContent === "" || tweetContent === null) {
         alert("Please enter some tweet content");
         return;
       }
-        if (tweetContent.length > 140) {
+      if (tweetContent.length > 140) {
         alert('Tweet cannot be more than 140 characters');
         return;
-        }
-  
+      }
+
       console.log('New tweet submitted');
       try {
         const response = await $.ajax({
