@@ -4,20 +4,28 @@
 //  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 //  */
 
+
 $(document).ready(function () {
+
+  // Function to escape some text, and then use it inside .html() or $().
+  const escape = str => {
+    const div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
 
   const createTweetElement = function (tweetData) {
     const $tweet = $(`<article class="tweet">
     <header class="container-row">
     <div class="profile container-row">
-    <img class="th-header img" src=${tweetData.user.avatars} >
-      <p>${tweetData.user.name}</p>
+    <img class="th-header img" src=${escape(tweetData.user.avatars)} >
+      <p>${escape(tweetData.user.name)}</p>
     </div>
-    <p class="handle">${tweetData.user.handle}</p>
+    <p class="handle">${escape(tweetData.user.handle)}</p>
     </div>
   </header> 
 <section class="tweet-content">
-<p>${tweetData.content.text} </p>
+<p>${escape(tweetData.content.text)} </p>
 </section>
 <footer>
 <p class="time-stamp">${timeago.format(tweetData.created_at)}</p> 
