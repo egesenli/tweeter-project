@@ -20,7 +20,7 @@ $(document).ready(function () {
 <p>${tweetData.content.text} </p>
 </section>
 <footer>
-<p class="time-stamp">${timeago.format(new Date())}</p> 
+<p class="time-stamp">${timeago.format(tweetData.created_at)}</p> 
 <div>
 <i class="fa-solid fa-flag"></i>
 <i class="fa-solid fa-retweet"></i>
@@ -51,7 +51,7 @@ $(document).ready(function () {
       console.error(error);
     }
   };
-
+  
   $(document).ready(async function () {
     await tweetLoader();
     $('.new-tweet form').submit(async function (event) {
@@ -68,5 +68,4 @@ $(document).ready(function () {
       }
     });
   });
-
 });
