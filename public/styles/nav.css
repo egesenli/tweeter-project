@@ -11,10 +11,10 @@ nav {
   position: fixed;
 }
 
-nav .logo {
+#logo {
   font-family: 'Bungee', sans-serif;
 }
 
-.icon-color {
+.red-color {
   color: #F26419;
 }

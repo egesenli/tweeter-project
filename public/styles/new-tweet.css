@@ -24,7 +24,7 @@ form {
   outline: none;
 }
 
-.under-tweet-div {
+div.under-tweet-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
