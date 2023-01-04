@@ -1,0 +1,22 @@
+.error-msg-cont {
+  margin-top: 1em;
+  justify-content: flex-start;
+  border: 4px solid red;
+  height: 2em;
+  padding: 1.5em;
+}
+
+.error-msg-cont i {
+  font-size: 1.5em;
+  margin: 1em 1em;
+  color: red;
+}
+
+.error-msg-cont p {
+  font-weight: 600;
+  color: red;
+}
+
+#new-tweet-error {
+  display: none;
+}
