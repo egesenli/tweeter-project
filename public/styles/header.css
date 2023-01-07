@@ -19,7 +19,7 @@
   font-weight: 600;
 }
 
-#header-profile {
+.header-profile {
   height: 480px;
   width: 100%;
   display: flex;
