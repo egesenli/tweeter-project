@@ -22,19 +22,19 @@ To use the app, install the necessary dependencies, start the web server, and vi
 
 1) Each tweet includes the user's name, handle, and social media icons. 
 
-!["Write a tweet and show it on time line"](https://user-images.githubusercontent.com/36883798/211178044-03b7c69d-a0a9-475b-9b61-04bf3321a0d0.gif)
+!["Write a tweet and show it on time line"](https://user-images.githubusercontent.com/36883798/211216447-974e1f92-518a-47e0-bffb-a3c4394c5cf4.gif)
 
 2) Tweeter is designed to be responsive, with the layout adjusting to fit different devices. On larger devices such as desktops and laptops with a screen width greater than 1024 pixels, the user's profile appears on the left and tweets are displayed on the right. On smaller devices like mobile phones and tablets, the sections are stacked with the profile on top and tweets below. 
 
-!["Show responsiveness"](https://user-images.githubusercontent.com/36883798/211177895-92117eec-ae64-462e-9546-a725e1ba492b.gif)
+!["Show responsiveness"](https://user-images.githubusercontent.com/36883798/211216445-5c1ce972-ddb0-4589-8bc5-5a90801a8339.gif)
 
 
 
 3) The app has features such as tweet validation to prevent empty or excessively long tweets from being posted. 
 
-!["Can't write an empty tweet"](https://user-images.githubusercontent.com/36883798/211177958-b4e895e3-bfbf-4310-b46c-ed8f1842efa7.gif)
+!["Can't write an empty tweet"](https://user-images.githubusercontent.com/36883798/211216444-56bebd53-27c8-4535-9b2c-a92c8a3e6f30.gif)
 
 
 4) The character limit for a tweet is limited to 140 characters. 
 
-!["Character limit error"](https://user-images.githubusercontent.com/36883798/211177989-1a8a2105-43f2-4b12-9d88-b0a15a487a3e.gif)
+!["Character limit error"](https://user-images.githubusercontent.com/36883798/211216443-e1691bc7-f79d-403c-a65e-dd83c78716ab.gif)
