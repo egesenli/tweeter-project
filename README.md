@@ -38,10 +38,3 @@ To use the app, install the necessary dependencies, start the web server, and vi
 4) The character limit for a tweet is limited to 140 characters. 
 
 !["Character limit error"](https://user-images.githubusercontent.com/36883798/211177989-1a8a2105-43f2-4b12-9d88-b0a15a487a3e.gif)
-
-
-
-
-
-
-
