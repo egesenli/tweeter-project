@@ -99,6 +99,10 @@ $(document).ready(function () {
         });
         tweetLoader();
         hideErrorMessage();
+        // Clear the textarea element after submitting new tweet
+        $('.new-tweet form textarea').val('');
+        // Reset the character counter or clear the textarea element
+        $('#tweet-counter').text(140);
       } catch (error) {
         console.error(error);
       }
