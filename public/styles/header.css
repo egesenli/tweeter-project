@@ -1,9 +1,3 @@
-.container-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #h2-profile {
   width: 256px;
   text-align: center;
